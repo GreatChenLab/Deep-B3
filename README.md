@@ -6,9 +6,9 @@ This repository has been tested on CentOS 7.5. We strongly recommend you to have
 
 ### Must installed packages or softwares
 
-- FastAI  1.0.61
+- [FastAI](https://docs.fast.ai/)  1.0.61
 
-- PyTorch 1.9.0
+- [PyTorch](https://pytorch.org/) 1.9.0
 
 - Torchvision 0.10.0
 
