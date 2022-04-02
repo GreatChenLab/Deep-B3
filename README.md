@@ -14,6 +14,8 @@ This repository has been tested on CentOS 7.5. We strongly recommend you to have
 
 - Pandas 1.3.2
 
+- Numpy 1.19.2
+
 - RDKit 2020.09.1
 
 ## Get Started
