@@ -141,7 +141,7 @@ if __name__ == '__main__':
     logging.info('generated features for {0} model'.format(train_test))
 
     make_dirs(train_test)
-    if args.is_balance:
+    if args.is_balance and train_test == 'train':
         infile = balance_data(infile)
     if not outfile:
         outfile = '{0}.feature'.format(args.smifile)
