@@ -43,6 +43,9 @@ python deep-b3.py train --train_feature train.csv --test_feature test.csv --bs 6
 ### test the pre-trian deep-b3 model on the test data
 - You can run the script `deep-b3-test.py` to test the pre-trained model on the test data used in this study, the results are stored in file `result.csv`.  Sample code:
 ```
-python deep-b3-test.py
+python deep-b3-test.py -model model-choices
 ```
+- model-choices: you can choice one in the 'tab', 'img', 'text', 'tab_img', 'tab_text', 'img_text', 'deep-b3', or given the 'all' for test all those models.
 
+### test the pre-trian deep-b3 model on your data
+- there need a feature file within id, smi and all the features inculding 208 molecular descriptors, 167 bit MACCS and 1024 Morgan fingerprints, and the graphs are stored in a directory, the image name should correspond to the id in the feature file.
