@@ -1,1 +1,2 @@
 tab_text.pth filter=lfs diff=lfs merge=lfs -text
+tab_img.pth filter=lfs diff=lfs merge=lfs -text
