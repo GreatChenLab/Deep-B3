@@ -1,0 +1,214 @@
+id,valid,canonical,iupac_name,cid,label
+test_neg_1,c1c(oc(c1)CN(C)C)CSCCNc1nc(c(c[nH]1)Cc1cc2c(cc1)cccc2)=O,CN(C)CC1=CC=C(O1)CSCCNC2=NC=C(C(=O)N2)CC3=CC4=CC=CC=C4C=C3,2-[2-[[5-[(dimethylamino)methyl]furan-2-yl]methylsulfanyl]ethylamino]-5-(naphthalen-2-ylmethyl)-1H-pyrimidin-6-one,14022522,1
+test_neg_2,c1c(c(ncc1)CSCCNC(=[NH]C#N)NCC)Br,-,-,-,1
+test_neg_3,n1c(csc1[NH]=C(N)N)c1cccc(c1)N,-,-,-,1
+test_neg_4,n1c(csc1[NH]=C(N)N)c1cccc(c1)NC(C)=O,-,-,-,1
+test_neg_5,n1c(csc1[NH]=C(N)N)c1cccc(c1)NC(NC)=[NH]C#N,-,-,-,1
+test_neg_6,CC(C)NCC(O)COc1ccc(CC(N)=O)cc1,CC(C)NCC(COC1=CC=C(C=C1)CC(=O)N)O,2-[4-[2-hydroxy-3-(propan-2-ylamino)propoxy]phenyl]acetamide,2249,1
+test_neg_7,OC4=C(C1CCC(CC1)c2ccc(Cl)cc2)C(=O)c3ccccc3C4=O,C1CC(CCC1C2=CC=C(C=C2)Cl)C3=C(C4=CC=CC=C4C(=O)C3=O)O,"3-[4-(4-chlorophenyl)cyclohexyl]-4-hydroxynaphthalene-1,2-dione",74989,1
+test_neg_8,C(C1C(NC(Cc2c[nH]cn2)C(NC(C(NC(C(=O)NC(C(NC(C(NC(C(N1)=O)C(CC)C)=O)CCCN)=O)CCCCNC(C(NC(C(NC(C(NC(C1N=C(C(C(CC)C)N)SC1)=O)CC(C)C)=O)CCC(O)=O)=O)C(CC)C)=O)CC(N)=O)=O)CC(O)=O)=O)=O)c1ccccc1,CCC(C)C1C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N1)CCCN)CCCCNC(=O)C(C(C)CC)NC(=O)C(CCC(=O)O)NC(=O)C(CC(C)C)NC(=O)C2CSC(=N2)C(C(C)CC)N)CC(=O)N)CC(=O)O)CC3=CN=CN3)CC4=CC=CC=C4,"4-[[2-[[2-(1-amino-2-methylbutyl)-4,5-dihydro-1,3-thiazole-4-carbonyl]amino]-4-methylpentanoyl]amino]-5-[[1-[4-[20-(2-amino-2-oxoethyl)-5-(3-aminopropyl)-11-benzyl-8-butan-2-yl-17-(carboxymethyl)-14-(1H-imidazol-5-ylmethyl)-3,6,9,12,15,18,21-heptaoxo-1,4,7,10,13,16,19-heptazacyclohenicos-2-yl]butylamino]-3-methyl-1-oxopentan-2-yl]amino]-5-oxopentanoic acid",2283,1
+test_neg_9,c1(ccc(c(c1)Cl)Cl)CC(N1C(c2c(CC1)[nH]cn2)CN1CCCC1)=O,C1CCN(C1)CC2C3=C(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)NC=N3,"2-(3,4-dichlorophenyl)-1-[4-(pyrrolidin-1-ylmethyl)-1,4,6,7-tetrahydroimidazo[4,5-c]pyridin-5-yl]ethanone",10000638,1
+test_neg_10,CC(C)CC7N5C(=O)C(NC(=O)C2CN(C)C1Cc3c(Br)[nH]c4cccc(C1=C2)c34)(OC5(O)C6CCCN6C7=O)C(C)C,CC(C)CC1C(=O)N2CCCC2C3(N1C(=O)C(O3)(C(C)C)NC(=O)C4CN(C5CC6=C(NC7=CC=CC(=C67)C5=C4)Br)C)O,"5-bromo-N-[2-hydroxy-7-(2-methylpropyl)-5,8-dioxo-4-propan-2-yl-3-oxa-6,9-diazatricyclo[7.3.0.02,6]dodecan-4-yl]-7-methyl-6,6a,8,9-tetrahydro-4H-indolo[4,3-fg]quinoline-9-carboxamide",2443,1
+test_neg_11,NS(=O)(=O)c2cc1c(N=CNS1(=O)=O)cc2Cl,C1=C2C(=CC(=C1Cl)S(=O)(=O)N)S(=O)(=O)N=CN2,"6-chloro-1,1-dioxo-4H-1lambda6,2,4-benzothiadiazine-7-sulfonamide",2720,1
+test_neg_12,CC34CC(O)C1C(CCC2=CC(=O)CCC12C)C3CCC4C(=O)CO,CC12CCC(=O)C=C1CCC3C2C(CC4(C3CCC4C(=O)CO)C)O,"11-hydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",439739,1
+test_neg_13,CC13CCC(=O)C=C1CCC4C2CCC(O)(C(=O)CO)C2(C)CC(O)C34,CC12CCC(=O)C=C1CCC3C2C(CC4(C3CCC4(C(=O)CO)O)C)O,"11,17-dihydroxy-17-(2-hydroxyacetyl)-10,13-dimethyl-2,6,7,8,9,11,12,14,15,16-decahydro-1H-cyclopenta[a]phenanthren-3-one",3640,1
+test_neg_14,CC(CN1CC(=O)NC(=O)C1)N2CC(=O)NC(=O)C2,CC(CN1CC(=O)NC(=O)C1)N2CC(=O)NC(=O)C2,"4-[2-(3,5-dioxopiperazin-1-yl)propyl]piperazine-2,6-dione",30623,1
+test_neg_15,OCC1CCC(O1)n2cnc3c(=O)[nH]cnc23,C1CC(OC1CO)N2C=NC3=C2N=CNC3=O,9-[5-(hydroxymethyl)oxolan-2-yl]-1H-purin-6-one,135422442,1
+test_neg_16,CN1CC(CC2C1Cc3c[nH]c4cccc2c34)C(=O)NC8(C)OC7(O)C5CCCN5C(=O)C(Cc6ccccc6)N7C8=O,CC1(C(=O)N2C(C(=O)N3CCCC3C2(O1)O)CC4=CC=CC=C4)NC(=O)C5CC6C(CC7=CNC8=CC=CC6=C78)N(C5)C,"N-(7-benzyl-2-hydroxy-4-methyl-5,8-dioxo-3-oxa-6,9-diazatricyclo[7.3.0.02,6]dodecan-4-yl)-7-methyl-6,6a,8,9,10,10a-hexahydro-4H-indolo[4,3-fg]quinoline-9-carboxamide",3066,1
+test_neg_17,c1ccc(C(CN2CCC(C2)O)N(C(Cc2ccccc2N)=O)C)cc1,CN(C(CN1CCC(C1)O)C2=CC=CC=C2)C(=O)CC3=CC=CC=C3N,2-(2-aminophenyl)-N-[2-(3-hydroxypyrrolidin-1-yl)-1-phenylethyl]-N-methylacetamide,9841487,1
+test_neg_18,CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N2CCCC2C(O)=O,CCOC(=O)C(CCC1=CC=CC=C1)NC(C)C(=O)N2CCCC2C(=O)O,1-[2-[(1-ethoxy-1-oxo-4-phenylbutan-2-yl)amino]propanoyl]pyrrolidine-2-carboxylic acid,3222,1
+test_neg_19,CCC(CO)NCCNC(CC)CO,CCC(CO)NCCNC(CC)CO,2-[2-(1-hydroxybutan-2-ylamino)ethylamino]butan-1-ol,3279,1
+test_neg_20,CC(=O)N2CCN(C(CN1CCC(O)C1)C2)C(=O)Cc3ccc(Cl)c(Cl)c3,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(3,4-dichlorophenyl)ethanone",131626,1
+test_neg_21,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(C2)O)=O)ccc(C(F)(F)F)cc1,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=C(C=C3)C(F)(F)F,1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-[4-(trifluoromethyl)phenyl]ethanone,74990507,1
+test_neg_22,c1(ccc(cc1)SC)CC(N1C(CN(CC1)C(=O)C)CN1CCC(C1)O)=O,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=C(C=C3)SC,1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(4-methylsulfanylphenyl)ethanone,74990430,1
+test_neg_23,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(C2)O)=O)cc(cc(c1)F)F,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC(=CC(=C3)F)F,"1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(3,5-difluorophenyl)ethanone",74990496,1
+test_neg_24,CC(=O)N2CCN(C(CN1CCC(O)C1)C2)C(=O)Cc3ccccc3,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=CC=C3,1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-phenylethanone,74990529,1
+test_neg_25,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(O)C2)=O)ccc(N(=O)=O)cc1,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=C(C=C3)[N+](=O)[O-],1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(4-nitrophenyl)ethanone,74990559,1
+test_neg_26,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(C2)O)=O)ccc(OC)cc1,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=C(C=C3)OC,1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(4-methoxyphenyl)ethanone,74990477,1
+test_neg_27,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(O)C2)=O)cc(ccc1)N(=O)=O,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC(=CC=C3)[N+](=O)[O-],1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(3-nitrophenyl)ethanone,74990481,1
+test_neg_28,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(O)C2)=O)ccc(S(=O)C)cc1,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=C(C=C3)S(=O)C,1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(4-methylsulfinylphenyl)ethanone,74990436,1
+test_neg_29,c1(CC(N2C(CN(CC2)C(=O)C)CN2CCC(O)C2)=O)ccc(S(=O)(=O)C)cc1,CC(=O)N1CCN(C(C1)CN2CCC(C2)O)C(=O)CC3=CC=C(C=C3)S(=O)(=O)C,1-[4-acetyl-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]-2-(4-methylsulfonylphenyl)ethanone,74990459,1
+test_neg_30,NC(=N)NCC2COC1(CCCCC1)O2,C1CCC2(CC1)OCC(O2)CN=C(N)N,"2-(1,4-dioxaspiro[4.5]decan-3-ylmethyl)guanidine",38521,1
+test_neg_31,COc1cccnc1CCCCNc3nc(=O)c(Cc2ccc(C)nc2)c[nH]3,CC1=NC=C(C=C1)CC2=CN=C(NC2=O)NCCCCC3=C(C=CC=N3)OC,2-[4-(3-methoxypyridin-2-yl)butylamino]-5-[(6-methylpyridin-3-yl)methyl]-1H-pyrimidin-6-one,72108,1
+test_neg_32,OC(=O)C1CCn2c1ccc2C(=O)c3ccccc3,C1CN2C(=CC=C2C(=O)C3=CC=CC=C3)C1C(=O)O,"5-benzoyl-2,3-dihydro-1H-pyrrolizine-1-carboxylic acid",3826,1
+test_neg_33,CCn2cc(C(O)=O)c(=O)c3cc(F)c(N1CCNC(C)C1)c(F)c23,CCN1C=C(C(=O)C2=CC(=C(C(=C21)F)N3CCNC(C3)C)F)C(=O)O,"1-ethyl-6,8-difluoro-7-(3-methylpiperazin-1-yl)-4-oxoquinoline-3-carboxylic acid",3948,1
+test_neg_34,CN(C)Cc3ccc(CSCCNc2nc(=O)c(Cc1ccc(C)nc1)c[nH]2)o3,CC1=NC=C(C=C1)CC2=CN=C(NC2=O)NCCSCC3=CC=C(O3)CN(C)C,2-[2-[[5-[(dimethylamino)methyl]furan-2-yl]methylsulfanyl]ethylamino]-5-[(6-methylpyridin-3-yl)methyl]-1H-pyrimidin-6-one,4375468,1
+test_neg_35,OCC(O)C(O)C(O)C(O)CO,C(C(C(C(C(CO)O)O)O)O)O,"hexane-1,2,3,4,5,6-hexol",453,1
+test_neg_36,CC(N)C(O)c1cccc(O)c1,CC(C(C1=CC(=CC=C1)O)O)N,3-(2-amino-1-hydroxypropyl)phenol,4087,1
+test_neg_37,CC#CC3(O)CCC4C2CCC1=CC(=O)CCC1=C2C(CC34C)c5ccc(cc5)N(C)C,CC#CC1(CCC2C1(CC(C3=C4CCC(=O)C=C4CCC23)C5=CC=C(C=C5)N(C)C)C)O,"11-[4-(dimethylamino)phenyl]-17-hydroxy-13-methyl-17-prop-1-ynyl-1,2,6,7,8,11,12,14,15,16-decahydrocyclopenta[a]phenanthren-3-one",4196,1
+test_neg_38,NCC(O)c1ccc(O)c(O)c1,C1=CC(=C(C=C1C(CN)O)O)O,"4-(2-amino-1-hydroxyethyl)benzene-1,2-diol",951,1
+test_neg_39,Nc2ccc(N=Nc1ccccc1)c(N)n2,C1=CC=C(C=C1)N=NC2=C(N=C(C=C2)N)N,"3-phenyldiazenylpyridine-2,6-diamine",4756,1
+test_neg_40,CC3(C)SC2C(NC(=O)COc1ccccc1)C(=O)N2C3C(O)=O,CC1(C(N2C(S1)C(C2=O)NC(=O)COC3=CC=CC=C3)C(=O)O)C,"3,3-dimethyl-7-oxo-6-[(2-phenoxyacetyl)amino]-4-thia-1-azabicyclo[3.2.0]heptane-2-carboxylic acid",4731,1
+test_neg_41,CCC(C)C(=O)OC1CC(O)C=C2C=CC(C)C(CCC(O)CC(O)CC(O)=O)C12,CCC(C)C(=O)OC1CC(C=C2C1C(C(C=C2)C)CCC(CC(CC(=O)O)O)O)O,"3,5-dihydroxy-7-[6-hydroxy-2-methyl-8-(2-methylbutanoyloxy)-1,2,6,7,8,8a-hexahydronaphthalen-1-yl]heptanoic acid",4889,1
+test_neg_42,c12c([C@H]([C@H]3[N@@]4C[C@H](C=C)[C@H](C3)CC4)O)ccnc1ccc(c2)OC,COC1=CC2=C(C=CN=C2C=C1)C(C3CC4CCN3CC4C=C)O,"(R)-[(2S,4S,5R)-5-ethenyl-1-azabicyclo[2.2.2]octan-2-yl]-(6-methoxyquinolin-4-yl)methanol",3034034,1
+test_neg_43,CNC(NCCSCc1ccc(CN(C)C)o1)=CN(=O)=O,CNC(=C[N+](=O)[O-])NCCSCC1=CC=C(O1)CN(C)C,"1-N'-[2-[[5-[(dimethylamino)methyl]furan-2-yl]methylsulfanyl]ethyl]-1-N-methyl-2-nitroethene-1,1-diamine",5039,1
+test_neg_44,CC(C)(C)NCC(O)c1ccc(O)c(CO)c1,CC(C)(C)NCC(C1=CC(=C(C=C1)O)CO)O,4-[2-(tert-butylamino)-1-hydroxyethyl]-2-(hydroxymethyl)phenol,2083,1
+test_neg_45,c1(ccc(c(c1)Cl)Cl)CC(N1C(CC2(CC1)NC(NC2=O)=O)CN1CCCC1)=O,C1CCN(C1)CC2CC3(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)C(=O)NC(=O)N3,"8-[2-(3,4-dichlorophenyl)acetyl]-7-(pyrrolidin-1-ylmethyl)-1,3,8-triazaspiro[4.5]decane-2,4-dione",74990425,1
+test_neg_46,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN2CC(CC2)O)c2n(CC1)ccn2)=O,C1CN(CC1O)CC2C3=NC=CN3CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl,"2-(3,4-dichlorophenyl)-1-[8-[(3-hydroxypyrrolidin-1-yl)methyl]-6,8-dihydro-5H-imidazo[1,2-a]pyrazin-7-yl]ethanone",44212823,1
+test_neg_47,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN2CC(CC2)O)CN(CC1)CCO)=O,C1CN(CC1O)CC2CN(CCN2C(=O)CC3=CC(=C(C=C3)Cl)Cl)CCO,"2-(3,4-dichlorophenyl)-1-[4-(2-hydroxyethyl)-2-[(3-hydroxypyrrolidin-1-yl)methyl]piperazin-1-yl]ethanone",74990383,1
+test_neg_48,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN2CC(CC2)O)c2c(CC1)[nH]cn2)=O,C1CN(CC1O)CC2C3=C(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)NC=N3,"2-(3,4-dichlorophenyl)-1-[4-[(3-hydroxypyrrolidin-1-yl)methyl]-1,4,6,7-tetrahydroimidazo[4,5-c]pyridin-5-yl]ethanone",74990382,1
+test_neg_49,c1cc2c(C(NC(CC)c3ccccc3)=O)c(c(nc2cc1)c1ccccc1)OCC(O)=O,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)OCC(=O)O,2-[2-phenyl-4-(1-phenylpropylcarbamoyl)quinolin-3-yl]oxyacetic acid,16207207,1
+test_neg_50,c1cc2c(C(NC(CC)c3ccccc3)=O)c(c(c3ccccc3)nc2cc1)OCCCC(O)=O,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)OCCCC(=O)O,4-[2-phenyl-4-(1-phenylpropylcarbamoyl)quinolin-3-yl]oxybutanoic acid,17944894,1
+test_neg_51,c1ccc2c(c(C(NC(CC)c3ccccc3)=O)c(OCCNC(Cc3c(cccc3)C(=O)O)=O)c(c3ccccc3)n2)c1,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)OCCNC(=O)CC5=CC=CC=C5C(=O)O,2-[2-oxo-2-[2-[2-phenyl-4-(1-phenylpropylcarbamoyl)quinolin-3-yl]oxyethylamino]ethyl]benzoic acid,21710503,1
+test_neg_52,c1cc2c(c(OCCNC(Cc3ncccc3)=O)c(c3ccccc3)nc2cc1)C(NC(CC)c1ccccc1)=O,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)OCCNC(=O)CC5=CC=CC=N5,2-phenyl-N-(1-phenylpropyl)-3-[2-[(2-pyridin-2-ylacetyl)amino]ethoxy]quinoline-4-carboxamide,21710489,1
+test_neg_53,c1cc2c(c(c(c3ccccc3)nc2cc1)OCCNC(C1CCCN1)=O)C(=O)NC(CC)c1ccccc1,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)OCCNC(=O)C5CCCN5,2-phenyl-N-(1-phenylpropyl)-3-[2-(pyrrolidine-2-carbonylamino)ethoxy]quinoline-4-carboxamide,44310697,1
+test_neg_54,c1cc2c(C(NC(CC)c3ccccc3)=O)c(c(nc2cc1)c1ccccc1)Cn1cncc1,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)CN5C=CN=C5,3-(imidazol-1-ylmethyl)-2-phenyl-N-(1-phenylpropyl)quinoline-4-carboxamide,44310680,1
+test_neg_55,CC1CN(CC(C)N1)c4c(F)c(N)c3c(=O)c(cn(C2CC2)c3c4F)C(O)=O,CC1CN(CC(N1)C)C2=C(C(=C3C(=C2F)N(C=C(C3=O)C(=O)O)C4CC4)N)F,"5-amino-1-cyclopropyl-7-(3,5-dimethylpiperazin-1-yl)-6,8-difluoro-4-oxoquinoline-3-carboxylic acid",5257,1
+test_neg_56,CN(N=O)C(=O)NC1C(O)OC(CO)C(O)C1O,CN(C(=O)NC1C(C(C(OC1O)CO)O)O)N=O,"1-methyl-1-nitroso-3-[2,4,5-trihydroxy-6-(hydroxymethyl)oxan-3-yl]urea",5300,1
+test_neg_57,Cc3ccc(Cc2c[nH]c(NCCCCc1ncc(Br)cc1C)nc2=O)cn3,CC1=NC=C(C=C1)CC2=CN=C(NC2=O)NCCCCC3=NC=C(C=C3C)Br,2-[4-(5-bromo-3-methylpyridin-2-yl)butylamino]-5-[(6-methylpyridin-3-yl)methyl]-1H-pyrimidin-6-one,55482,1
+test_neg_58,CN2C(=C(O)c1sccc1S2(=O)=O)C(=O)Nc3ccccn3,CN1C(=C(C2=C(S1(=O)=O)C=CS2)O)C(=O)NC3=CC=CC=N3,"4-hydroxy-2-methyl-1,1-dioxo-N-pyridin-2-ylthieno[2,3-e]thiazine-3-carboxamide",54677971,1
+test_neg_59,s1cc(nc1[NH]=C(N)N)C,CC1=CSC(=N1)[NH+]=C(N)N,"diaminomethylidene-(4-methyl-1,3-thiazol-2-yl)azanium",6928896,1
+test_pos_1,c1cc(ncc1)CSCCNc1c(cc[nH]1)N(=O)=O,C1=CC=NC(=C1)CSCCNC2=C(C=CN2)[N+](=O)[O-],3-nitro-N-[2-(pyridin-2-ylmethylsulfanyl)ethyl]-1H-pyrrol-2-amine,14022481,0
+test_pos_2,c1(cc(nc(c1C)C)C(SC(CNc1c(cc[nH]1)N(=O)=O)(C)C)(C)C)C,-,-,-,0
+test_pos_3,n1c(csc1[NH]=C(N)N)c1ccccc1,C1=CC=C(C=C1)C2=CSC(=N2)[NH+]=C(N)N,"diaminomethylidene-(4-phenyl-1,3-thiazol-2-yl)azanium",6346355,0
+test_pos_4,C1CN(CCC1)Cc1cccc(c1)OCCCNC(=O)C,CC(=O)NCCCOC1=CC=CC(=C1)CN2CCCCC2,N-[3-[3-(piperidin-1-ylmethyl)phenoxy]propyl]acetamide,9971484,0
+test_pos_5,C1CN(CCC1)Cc1cccc(c1)OCCCNC(=O)c1ccccc1,C1CCN(CC1)CC2=CC(=CC=C2)OCCCNC(=O)C3=CC=CC=C3,N-[3-[3-(piperidin-1-ylmethyl)phenoxy]propyl]benzamide,10498206,0
+test_pos_6,C1CN(CCC1)Cc1cccc(c1)OCCCO,C1CCN(CC1)CC2=CC(=CC=C2)OCCCO,3-[3-(piperidin-1-ylmethyl)phenoxy]propan-1-ol,10444765,0
+test_pos_7,C1CN(CCC1)Cc1cccc(c1)OCCCNc1ncccc1,C1CCN(CC1)CC2=CC(=CC=C2)OCCCNC3=CC=CC=N3,N-[3-[3-(piperidin-1-ylmethyl)phenoxy]propyl]pyridin-2-amine,10019237,0
+test_pos_8,C1CN(CCC1)Cc1cccc(c1)OCCCNc1nccs1,C1CCN(CC1)CC2=CC(=CC=C2)OCCCNC3=NC=CS3,"N-[3-[3-(piperidin-1-ylmethyl)phenoxy]propyl]-1,3-thiazol-2-amine",14022497,0
+test_pos_9,C1CN(CCC1)Cc1cccc(c1)OCCCNc1nc2c(o1)cccc2,C1CCN(CC1)CC2=CC(=CC=C2)OCCCNC3=NC4=CC=CC=C4O3,"N-[3-[3-(piperidin-1-ylmethyl)phenoxy]propyl]-1,3-benzoxazol-2-amine",14022499,0
+test_pos_10,CCCN(CCC)CCc1ccc(c2c1CC(N2)=C)O,-,-,-,0
+test_pos_11,c1cc(CCNC)ncc1,CNCCC1=CC=CC=N1,N-methyl-2-pyridin-2-ylethanamine,2366,0
+test_pos_12,c1cc(CCN(C)C)ncc1,CN(C)CCC1=CC=CC=N1,"N,N-dimethyl-2-pyridin-2-ylethanamine",80554,0
+test_pos_13,s1c(ncc1)CCN,C1=CSC(=N1)CCN,"2-(1,3-thiazol-2-yl)ethanamine",87653,0
+test_pos_14,c1nc(C2CCN(CC2)C(NC2CCCCC2)=S)c[nH]1,C1CCC(CC1)NC(=S)N2CCC(CC2)C3=CN=CN3,N-cyclohexyl-4-(1H-imidazol-5-yl)piperidine-1-carbothioamide,3035905,0
+test_pos_15,s1cc(CSCCNC(NC)=[NH]C#N)nc1[NH]=C(N)N,-,-,-,0
+test_pos_16,CC(Cl)(Cl)Cl,CC(Cl)(Cl)Cl,"1,1,1-trichloroethane",6278,0
+test_pos_17,C(CCl)(F)(F)F,C(C(F)(F)F)Cl,"2-chloro-1,1,1-trifluoroethane",6408,0
+test_pos_18,n12c3c(C(c4c(cccc4)F)=NCc1cnc2CO)cc(Cl)cc3,C1C2=CN=C(N2C3=C(C=C(C=C3)Cl)C(=N1)C4=CC=CC=C4F)CO,"[8-chloro-6-(2-fluorophenyl)-4H-imidazo[1,5-a][1,4]benzodiazepin-1-yl]methanol",107917,0
+test_pos_19,CCC(C)(C)C,CCC(C)(C)C,"2,2-dimethylbutane",6403,0
+test_pos_20,CC(CCC)C,CCCC(C)C,2-methylpentane,7892,0
+test_pos_21,CC(C)(O)C(F)(F)F,CC(C)(C(F)(F)F)O,"1,1,1-trifluoro-2-methylpropan-2-ol",68182,0
+test_pos_22,CC(C)O,CC(C)O,propan-2-ol,3776,0
+test_pos_23,CCCC(C)CC,CCCC(C)CC,3-methylhexane,11507,0
+test_pos_24,CCC(C)CC,CCC(C)CC,3-methylpentane,7282,0
+test_pos_25,c12c(C(c3c(cccc3)F)=NC(c3n1c(nc3)C)O)cc(Cl)cc2,CC1=NC=C2N1C3=C(C=C(C=C3)Cl)C(=NC2O)C4=CC=CC=C4F,"8-chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][1,4]benzodiazepin-4-ol",124449,0
+test_pos_26,c1ccc2Oc3c(cc(cc3)Cl)C3C(c2c1)CN(CC3)C,-,-,-,0
+test_pos_27,c1c(Cl)nc(N2CCN(CCCCN3C(CCC3)=O)CC2)cc1C(F)(F)F,-,-,-,0
+test_pos_28,c1ccc2Oc3c(cc(cc3)Cl)C3C(c2c1)CNCC3,-,-,-,0
+test_pos_29,n1(c(c2nc[nH]c2n(c1=O)C)=O)C,CN1C2=C(C(=O)N(C1=O)C)NC=N2,"1,3-dimethyl-7H-purine-2,6-dione",2153,0
+test_pos_30,c1c2CCOc2c(cc1OC)CNC1CCCNC1c1ccccc1,COC1=CC2=C(C(=C1)CNC3CCCNC3C4=CC=CC=C4)OCC2,"N-[(5-methoxy-2,3-dihydro-1-benzofuran-7-yl)methyl]-2-phenylpiperidin-3-amine",44213642,0
+test_pos_31,c1(cc(NC(=[NH]c2cccc(c2)CC)C)ccc1)CC,-,-,-,0
+test_pos_32,c1(c(cc2n(ncc2c1)CCN)Cl)Cl,C1=C2C=NN(C2=CC(=C1Cl)Cl)CCN,"2-(5,6-dichloroindazol-1-yl)ethanamine",44214615,0
+test_pos_33,c1(c2c(cc(F)cc2)on1)C1CCN(CCc2c(n3c(C(CCC3)O)nc2C)=O)CC1,CC1=C(C(=O)N2CCCC(C2=N1)O)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F,"3-[2-[4-(6-fluoro-1,2-benzoxazol-3-yl)piperidin-1-yl]ethyl]-9-hydroxy-2-methyl-6,7,8,9-tetrahydropyrido[1,2-a]pyrimidin-4-one",115237,0
+test_pos_34,Nc4nc(NC1CC1)c3ncn(C2CC(CO)C=C2)c3n4,C1CC1NC2=C3C(=NC(=N2)N)N(C=N3)C4CC(C=C4)CO,[4-[2-amino-6-(cyclopropylamino)purin-9-yl]cyclopent-2-en-1-yl]methanol,1971,0
+test_pos_35,CCCSc2ccc1[nH]c(NC(=O)OC)nc1c2,CCCSC1=CC2=C(C=C1)N=C(N2)NC(=O)OC,methyl N-(6-propylsulfanyl-1H-benzimidazol-2-yl)carbamate,2082,0
+test_pos_36,O=c1[nH]cnc2[nH]ncc12,C1=NNC2=C1C(=O)NC=N2,"1,5-dihydropyrazolo[3,4-d]pyrimidin-4-one",135401907,0
+test_pos_37,CN(C)c2c(C)n(C)n(c1ccccc1)c2=O,CC1=C(C(=O)N(N1C)C2=CC=CC=C2)N(C)C,"4-(dimethylamino)-1,5-dimethyl-2-phenylpyrazol-3-one",6009,0
+test_pos_38,Cc2cc(=O)n(c1ccccc1)n2C,CC1=CC(=O)N(N1C)C2=CC=CC=C2,"1,5-dimethyl-2-phenylpyrazol-3-one",2206,0
+test_pos_39,c1(NCCSCc2oc(cc2)CN(C)C)[nH]cc(c1N(=O)=O)Cc1ccccc1,CN(C)CC1=CC=C(O1)CSCCNC2=C(C(=CN2)CC3=CC=CC=C3)[N+](=O)[O-],4-benzyl-N-[2-[[5-[(dimethylamino)methyl]furan-2-yl]methylsulfanyl]ethyl]-3-nitro-1H-pyrrol-2-amine,14022484,0
+test_pos_40,c1ccccc1,C1=CC=CC=C1,benzene,241,0
+test_pos_41,CC(C)(C)OC(=O)c1ncn3c1C2CCCN2C(=O)c4cc(Br)ccc34,CC(C)(C)OC(=O)C1=C2C3CCCN3C(=O)C4=C(N2C=N1)C=CC(=C4)Br,"tert-butyl 15-bromo-12-oxo-2,4,11-triazatetracyclo[11.4.0.02,6.07,11]heptadeca-1(17),3,5,13,15-pentaene-5-carboxylate",133109366,0
+test_pos_42,c1(cc(c(cc1)Cl)Cl)CC(N1CCCCC1CN1CCCC1)=O,C1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"2-(3,4-dichlorophenyl)-1-[2-(pyrrolidin-1-ylmethyl)piperidin-1-yl]ethanone",5244802,0
+test_pos_43,c1(cc(c(cc1)Cl)Cl)CC(N1C(c2c(CC1)cccc2)CN1CCCC1)=O,C1CCN(C1)CC2C3=CC=CC=C3CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl,"2-(3,4-dichlorophenyl)-1-[1-(pyrrolidin-1-ylmethyl)-3,4-dihydro-1H-isoquinolin-2-yl]ethanone",14726012,0
+test_pos_44,c1(ccc(cc1)C(F)(F)F)CC(N1C(CCCC1)CN1CCCC1)=O,C1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC=C(C=C3)C(F)(F)F,1-[2-(pyrrolidin-1-ylmethyl)piperidin-1-yl]-2-[4-(trifluoromethyl)phenyl]ethanone,14810960,0
+test_pos_45,c1(ccc(c(c1)Cl)Cl)CC(N1C(c2c(CC1)scc2)CN1CCCC1)=O,C1CCN(C1)CC2C3=C(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)SC=C3,"2-(3,4-dichlorophenyl)-1-[4-(pyrrolidin-1-ylmethyl)-6,7-dihydro-4H-thieno[3,2-c]pyridin-5-yl]ethanone",15697372,0
+test_pos_46,c1(ccc(c(c1)Cl)Cl)CC(N1C(c2c(CC1)ccs2)CN1CCCC1)=O,C1CCN(C1)CC2C3=C(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)C=CS3,"2-(3,4-dichlorophenyl)-1-[7-(pyrrolidin-1-ylmethyl)-5,7-dihydro-4H-thieno[2,3-c]pyridin-6-yl]ethanone",9822764,0
+test_pos_47,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN2CCCC2)CC(CC1)(C)C)=O,CC1(CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl)C,"2-(3,4-dichlorophenyl)-1-[4,4-dimethyl-2-(pyrrolidin-1-ylmethyl)piperidin-1-yl]ethanone",15165805,0
+test_pos_48,CS(=O)(=O)OCCCCOS(C)(=O)=O,CS(=O)(=O)OCCCCOS(=O)(=O)C,4-methylsulfonyloxybutyl methanesulfonate,2478,0
+test_pos_49,CCC(C)=O,CCC(=O)C,butan-2-one,6569,0
+test_pos_50,Cn1cnc2n(C)c(=O)n(C)c(=O)c12,CN1C=NC2=C1C(=O)N(C(=O)N2C)C,"1,3,7-trimethylpurine-2,6-dione",2519,0
+test_pos_51,c12C3C(c4c(cccc4)N(c1cccc2)C(N)=O)O3,C1=CC=C2C(=C1)C3C(O3)C4=CC=CC=C4N2C(=O)N,"3-oxa-11-azatetracyclo[10.4.0.02,4.05,10]hexadeca-1(16),5,7,9,12,14-hexaene-11-carboxamide",2555,0
+test_pos_52,ClCCNC(=O)N(CCCl)N=O,C(CCl)NC(=O)N(CCCl)N=O,"1,3-bis(2-chloroethyl)-1-nitrosourea",2578,0
+test_pos_53,COC2CN(CCCOc1ccc(F)cc1)CCC2NC(=O)c3cc(Cl)c(N)cc3OC,COC1CN(CCC1NC(=O)C2=CC(=C(C=C2OC)N)Cl)CCCOC3=CC=C(C=C3)F,4-amino-5-chloro-N-[1-[3-(4-fluorophenoxy)propyl]-3-methoxypiperidin-4-yl]-2-methoxybenzamide,2769,0
+test_pos_54,Nc1nc(Cl)nc2n(cnc12)C3CC(O)C(CO)O3,C1C(C(OC1N2C=NC3=C(N=C(N=C32)Cl)N)CO)O,5-(6-amino-2-chloropurin-9-yl)-2-(hydroxymethyl)oxolan-3-ol,1546,0
+test_pos_55,Clc1cccc(Cl)c1N=C2NCCN2,C1CN=C(N1)NC2=C(C=CC=C2Cl)Cl,"N-(2,6-dichlorophenyl)-4,5-dihydro-1H-imidazol-2-amine",2803,0
+test_pos_56,c1cn(c(c(c1=O)O)C)C,CC1=C(C(=O)C=CN1C)O,"3-hydroxy-1,2-dimethylpyridin-4-one",2972,0
+test_pos_57,c1cn(CC)c(c(c1=O)O)C,CCN1C=CC(=O)C(=C1C)O,1-ethyl-3-hydroxy-2-methylpyridin-4-one,94413,0
+test_pos_58,c1cn(CCCC)c(C)c(O)c1=O,CCCCN1C=CC(=O)C(=C1C)O,1-butyl-3-hydroxy-2-methylpyridin-4-one,121733,0
+test_pos_59,c1cn(CCCCCC)c(C)c(O)c1=O,CCCCCCN1C=CC(=O)C(=C1C)O,1-hexyl-3-hydroxy-2-methylpyridin-4-one,10488627,0
+test_pos_60,c1cn(CCCCC)c(C)c(O)c1=O,CCCCCN1C=CC(=O)C(=C1C)O,3-hydroxy-2-methyl-1-pentylpyridin-4-one,121734,0
+test_pos_61,c1cn(CC)c(CC)c(c1=O)O,CCC1=C(C(=O)C=CN1CC)O,"1,2-diethyl-3-hydroxypyridin-4-one",86322,0
+test_pos_62,C1CCCCC1,C1CCCCC1,cyclohexane,8078,0
+test_pos_63,NC1CONC1=O,C1C(C(=O)NO1)N,"4-amino-1,2-oxazolidin-3-one",401,0
+test_pos_64,Nc2ccn(C1OC(CO)C(O)C1O)c(=O)n2,C1=CN(C(=O)N=C1N)C2C(C(C(O2)CO)O)O,"4-amino-1-[3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]pyrimidin-2-one",596,0
+test_pos_65,CN(C)N=Nc1[nH]cnc1C(N)=O,CN(C)N=NC1=C(NC=N1)C(=O)N,4-(dimethylaminodiazenyl)-1H-imidazole-5-carboxamide,2942,0
+test_pos_66,Clc1ccc2NC(=O)CC(=O)N(c3ccccc3)c2c1,C1C(=O)NC2=C(C=C(C=C2)Cl)N(C1=O)C3=CC=CC=C3,"7-chloro-5-phenyl-1H-1,5-benzodiazepine-2,4-dione",89657,0
+test_pos_67,N1(c2c(CCc3c1cccc3)cccc2)CCCN,C1CC2=CC=CC=C2N(C3=CC=CC=C31)CCCN,"3-(5,6-dihydrobenzo[b][1]benzazepin-11-yl)propan-1-amine",159642,0
+test_pos_68,Clc2cccc3NC(=O)CN=C(c1ccccc1)c23,C1C(=O)NC2=C(C(=CC=C2)Cl)C(=N1)C3=CC=CC=C3,"6-chloro-5-phenyl-1,3-dihydro-1,4-benzodiazepin-2-one",14590445,0
+test_pos_69,N1(c2c(Sc3c1cccc3)cccc2)CCCNC,CNCCCN1C2=CC=CC=C2SC3=CC=CC=C31,N-methyl-3-phenothiazin-10-ylpropan-1-amine,28315,0
+test_pos_70,CCO,CCO,ethanol,702,0
+test_pos_71,CCc1cc(ccn1)C(N)=S,CCC1=NC=CC(=C1)C(=S)N,2-ethylpyridine-4-carbothioamide,2761171,0
+test_pos_72,CCc1ccccc1,CCC1=CC=CC=C1,ethylbenzene,7500,0
+test_pos_73,NC(N)=Nc1nc(CSCCC(N)=NS(N)(=O)=O)cs1,C1=C(N=C(S1)N=C(N)N)CSCCC(=NS(=O)(=O)N)N,"3-[[2-(diaminomethylideneamino)-1,3-thiazol-4-yl]methylsulfanyl]-N'-sulfamoylpropanimidamide",3325,0
+test_pos_74,CCOC(=O)c1ncn2c1CN(C)C(=O)c3cc(F)ccc23,CCOC(=O)C1=C2CN(C(=O)C3=C(N2C=N1)C=CC(=C3)F)C,"ethyl 8-fluoro-5-methyl-6-oxo-4H-imidazo[1,5-a][1,4]benzodiazepine-3-carboxylate",3373,0
+test_pos_75,P(C(=O)O)(=O)(O)O,C(=O)(O)P(=O)(O)O,phosphonoformic acid,3415,0
+test_pos_76,c1(cc(c(cc1)Cl)Cl)CC(N1C(CN2CCCC2)CN(CC1)C(=O)C)=O,CC(=O)N1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"1-[4-acetyl-2-(pyrrolidin-1-ylmethyl)piperazin-1-yl]-2-(3,4-dichlorophenyl)ethanone",15645956,0
+test_pos_77,c1(ccc(c(c1)Cl)Cl)CC(N1C(c2c(CC1)occ2)CN1CCCC1)=O,C1CCN(C1)CC2C3=C(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)OC=C3,"2-(3,4-dichlorophenyl)-1-[4-(pyrrolidin-1-ylmethyl)-6,7-dihydro-4H-furo[3,2-c]pyridin-5-yl]ethanone",10340520,0
+test_pos_78,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN(CC1)C(=O)OC)CN1CCCC1)=O,COC(=O)N1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"methyl 4-[2-(3,4-dichlorophenyl)acetyl]-3-(pyrrolidin-1-ylmethyl)piperazine-1-carboxylate",3505,0
+test_pos_79,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN(CC1)C(=O)OCC)CN1CCCC1)=O,CCOC(=O)N1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"ethyl 4-[2-(3,4-dichlorophenyl)acetyl]-3-(pyrrolidin-1-ylmethyl)piperazine-1-carboxylate",15645964,0
+test_pos_80,c1(CC(N2C(CN(CC2)C(=O)OCCC)CN2CCCC2)=O)cc(c(cc1)Cl)Cl,CCCOC(=O)N1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"propyl 4-[2-(3,4-dichlorophenyl)acetyl]-3-(pyrrolidin-1-ylmethyl)piperazine-1-carboxylate",15645965,0
+test_pos_81,c1(ccc(c(c1)Cl)Cl)CC(N1C(c2c(CC1)occ2)CN1CC(CC1)O)=O,C1CN(CC1O)CC2C3=C(CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl)OC=C3,"2-(3,4-dichlorophenyl)-1-[4-[(3-hydroxypyrrolidin-1-yl)methyl]-6,7-dihydro-4H-furo[3,2-c]pyridin-5-yl]ethanone",10070066,0
+test_pos_82,CCCCCCC,CCCCCCC,heptane,8900,0
+test_pos_83,CCCCCC,CCCCCC,hexane,8058,0
+test_pos_84,C(NO)(N)=O,C(=O)(N)NO,hydroxyurea,3657,0
+test_pos_85,CC(C)Cc1ccc(cc1)C(C)C(O)=O,CC(C)CC1=CC=C(C=C1)C(C)C(=O)O,2-[4-(2-methylpropyl)phenyl]propanoic acid,3672,0
+test_pos_86,CC(C)C(CN1CCCC1)N(C)C(=O)Cc2ccc(Cl)c(Cl)c2,CC(C)C(CN1CCCC1)N(C)C(=O)CC2=CC(=C(C=C2)Cl)Cl,"2-(3,4-dichlorophenyl)-N-methyl-N-(3-methyl-1-pyrrolidin-1-ylbutan-2-yl)acetamide",5748198,0
+test_pos_87,CN(C(CN1CCCC1)c2ccccc2)C(=O)Cc3ccc(Cl)c(Cl)c3,CN(C(CN1CCCC1)C2=CC=CC=C2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"2-(3,4-dichlorophenyl)-N-methyl-N-(1-phenyl-2-pyrrolidin-1-ylethyl)acetamide",4545429,0
+test_pos_88,NNC(=O)c1ccncc1,C1=CN=CC=C1C(=O)NN,pyridine-4-carbohydrazide,3767,0
+test_pos_89,c12c(C(N(Cc3n1cnc3c1noc(n1)C(C)C)C)=O)c(ccc2)Cl,CC(C)C1=NC(=NO1)C2=C3CN(C(=O)C4=C(N3C=N2)C=CC=C4Cl)C,"7-chloro-5-methyl-3-(5-propan-2-yl-1,2,4-oxadiazol-3-yl)-4H-imidazo[1,5-a][1,4]benzodiazepin-6-one",129710,0
+test_pos_90,ClCCN(N=O)C(=O)NC1CCCCC1,C1CCC(CC1)NC(=O)N(CCCl)N=O,1-(2-chloroethyl)-3-cyclohexyl-1-nitrosourea,3950,0
+test_pos_91,OC(C1CCCCN1)c2cc(nc3c(cccc23)C(F)(F)F)C(F)(F)F,C1CCNC(C1)C(C2=CC(=NC3=C2C=CC=C3C(F)(F)F)C(F)(F)F)O,"[2,8-bis(trifluoromethyl)quinolin-4-yl]-piperidin-2-ylmethanol",4046,0
+test_pos_92,COc2ccc(CN(CCN(C)C)c1ccccn1)cc2,CN(C)CCN(CC1=CC=C(C=C1)OC)C2=CC=CC=N2,"N'-[(4-methoxyphenyl)methyl]-N,N-dimethyl-N'-pyridin-2-ylethane-1,2-diamine",4992,0
+test_pos_93,CC1CCCC1,CC1CCCC1,methylcyclopentane,7296,0
+test_pos_94,COCCc1ccc(OCC(O)CNC(C)C)cc1,CC(C)NCC(COC1=CC=C(C=C1)CCOC)O,1-[4-(2-methoxyethyl)phenoxy]-3-(propan-2-ylamino)propan-2-ol,4171,0
+test_pos_95,Cc1cccc(C)c1,CC1=CC(=CC=C1)C,"1,3-xylene",7929,0
+test_pos_96,OC1C=CC2C3Cc4ccc(O)c5OC1C2(CCN3CC=C)c45,C=CCN1CCC23C4C1CC5=C2C(=C(C=C5)O)OC3C(C=C4)O,"3-prop-2-enyl-2,4,4a,7,7a,13-hexahydro-1H-4,12-methanobenzofuro[3,2-e]isoquinoline-7,9-diol",4423,0
+test_pos_97,Cc3ccnc4N(C1CC1)c2ncccc2C(=O)Nc34,CC1=C2C(=NC=C1)N(C3=C(C=CC=N3)C(=O)N2)C4CC4,"2-cyclopropyl-7-methyl-2,4,9,15-tetrazatricyclo[9.4.0.03,8]pentadeca-1(11),3,5,7,12,14-hexaen-10-one",4463,0
+test_pos_98,N1(c2c(Sc3c1cccc3)ccc(c2)Cl)CCCNC,CNCCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)Cl,3-(2-chlorophenothiazin-10-yl)-N-methylpropan-1-amine,62875,0
+test_pos_99,N1(c2c(Sc3c1cccc3)ccc(c2)Cl)CCCN,C1=CC=C2C(=C1)N(C3=C(S2)C=CC(=C3)Cl)CCCN,3-(2-chlorophenothiazin-10-yl)propan-1-amine,74981,0
+test_pos_100,N1(c2c(Sc3c1cccc3)ccc(c2)SC)CCC1NCCCC1,CSC1=CC2=C(C=C1)SC3=CC=CC=C3N2CCC4CCCCN4,2-methylsulfanyl-10-(2-piperidin-2-ylethyl)phenothiazine,558813,0
+test_pos_101,C1NCCN(C1)c1ccc(c(n1)Cl)C(F)(F)F,C1CN(CCN1)C2=NC(=C(C=C2)C(F)(F)F)Cl,1-[6-chloro-5-(trifluoromethyl)pyridin-2-yl]piperazine,9796408,0
+test_pos_102,C1N(CCN(C1)c1cc(ccn1)C(F)(F)F)CCCCN1C(CCC1)=O,C1CC(=O)N(C1)CCCCN2CCN(CC2)C3=NC=CC(=C3)C(F)(F)F,1-[4-[4-[4-(trifluoromethyl)pyridin-2-yl]piperazin-1-yl]butyl]pyrrolidin-2-one,9907401,0
+test_pos_103,c1c2c(cc(c1)Cl)C1C(c3ccccc3O2)CNC1,C1C2C(CN1)C3=C(C=CC(=C3)Cl)OC4=CC=CC=C24,"9-chloro-13-oxa-4-azatetracyclo[12.4.0.02,6.07,12]octadeca-1(18),7(12),8,10,14,16-hexaene",14577084,0
+test_pos_104,c1c2c(ccc1)C1(C(c3cccc(c3O2)C)CNCC1)O,CC1=C2C(=CC=C1)C3CNCCC3(C4=CC=CC=C4O2)O,"16-methyl-14-oxa-4-azatetracyclo[13.4.0.02,7.08,13]nonadeca-1(19),8,10,12,15,17-hexaen-7-ol",22154175,0
+test_pos_105,c1ccc(c(c1)C(CC=C)N)c1c2c(on1)cccc2,C=CCC(C1=CC=CC=C1C2=NOC3=CC=CC=C32)N,"1-[2-(1,2-benzoxazol-3-yl)phenyl]but-3-en-1-amine",9861160,0
+test_pos_106,CN1CC3C(C1)c2cc(Cl)ccc2Oc4ccccc34,CN1CC2C(C1)C3=C(C=CC(=C3)Cl)OC4=CC=CC=C24,"9-chloro-4-methyl-13-oxa-4-azatetracyclo[12.4.0.02,6.07,12]octadeca-1(18),7(12),8,10,14,16-hexaene",9903970,0
+test_pos_107,Cc1ccccc1C,CC1=CC=CC=C1C,"1,2-xylene",7237,0
+test_pos_108,O=c1c2c([nH]c(=O)n1C)ncn2C,CN1C=NC2=C1C(=O)N(C(=O)N2)C,"1,7-dimethyl-3H-purine-2,6-dione",4687,0
+test_pos_109,CCCCC,CCCCC,pentane,8003,0
+test_pos_110,OCC1OC(CC1O)n2cnc3C(O)CNC=Nc23,C1C(C(OC1N2C=NC3=C2NC=NCC3O)CO)O,"3-[4-hydroxy-5-(hydroxymethyl)oxolan-2-yl]-7,8-dihydro-4H-imidazo[4,5-d][1,3]diazepin-8-ol",4739,0
+test_pos_111,c12C3(C(N(C)CC3)N(c1ccc(c2)OC(Nc1ccccc1)=O)C)C,CC12CCN(C1N(C3=C2C=C(C=C3)OC(=O)NC4=CC=CC=C4)C)C,"(3,4,8b-trimethyl-2,3a-dihydro-1H-pyrrolo[2,3-b]indol-7-yl) N-phenylcarbamate",612745,0
+test_pos_112,CCCCC1C(=O)N(N(C1=O)c2ccccc2)c3ccccc3,CCCCC1C(=O)N(N(C1=O)C2=CC=CC=C2)C3=CC=CC=C3,"4-butyl-1,2-diphenylpyrazolidine-3,5-dione",4781,0
+test_pos_113,CC(C)NCC(O)COc1cccc2[nH]ccc12,CC(C)NCC(COC1=CC=CC2=C1C=CN2)O,1-(1H-indol-4-yloxy)-3-(propan-2-ylamino)propan-2-ol,4828,0
+test_pos_114,CN1CCN(CC1)CC(=O)N3c2ccccc2C(=O)Nc4cccnc34,CN1CCN(CC1)CC(=O)N2C3=CC=CC=C3C(=O)NC4=C2N=CC=C4,"11-[2-(4-methylpiperazin-1-yl)acetyl]-5H-pyrido[2,3-b][1,4]benzodiazepin-6-one",4848,0
+test_pos_115,COC(C5Cc4cc3cc(OC2CC(OC1CC(O)C(O)C(C)O1)C(O)C(C)O2)c(C)c(O)c3c(O)c4C(=O)C5OC8CC(OC7CC(O)C(OC6CC(C)(O)C(O)C(C)O6)C(C)O7)C(O)C(C)O8)C(=O)C(O)C(C)O,CC1C(C(CC(O1)OC2CC(OC(C2O)C)OC3=CC4=CC5=C(C(=O)C(C(C5)C(C(=O)C(C(C)O)O)OC)OC6CC(C(C(O6)C)O)OC7CC(C(C(O7)C)OC8CC(C(C(O8)C)O)(C)O)O)C(=C4C(=C3C)O)O)O)O,"2-[4-[5-(4,5-dihydroxy-4,6-dimethyloxan-2-yl)oxy-4-hydroxy-6-methyloxan-2-yl]oxy-5-hydroxy-6-methyloxan-2-yl]oxy-3-(3,4-dihydroxy-1-methoxy-2-oxopentyl)-6-[4-(4,5-dihydroxy-6-methyloxan-2-yl)oxy-5-hydroxy-6-methyloxan-2-yl]oxy-8,9-dihydroxy-7-methyl-3,4-dihydro-2H-anthracen-1-one",3518632,0
+test_pos_116,O=C1CN(CC2N1CCc3ccccc23)C(=O)C4CCCCC4,C1CCC(CC1)C(=O)N2CC3C4=CC=CC=C4CCN3C(=O)C2,"2-(cyclohexanecarbonyl)-3,6,7,11b-tetrahydro-1H-pyrazino[2,1-a]isoquinolin-4-one",4891,0
+test_pos_117,CC(=O)C3CCC4C2CCC1=CC(=O)CCC1(C)C2CCC34C,CC(=O)C1CCC2C1(CCC3C2CCC4=CC(=O)CCC34C)C,"17-acetyl-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",4920,0
+test_pos_118,CCCO,CCCO,propan-1-ol,1031,0
+test_pos_119,CC(C)=O,CC(=O)C,propan-2-one,180,0
+test_pos_120,Cc1ccc(C)cc1,CC1=CC=C(C=C1)C,"1,4-xylene",7809,0
+test_pos_121,NC(=O)c1cnccn1,C1=CN=C(C=N1)C(=O)N,pyrazine-2-carboxamide,1046,0
+test_pos_122,CCc1nc(N)nc(N)c1c2ccc(Cl)cc2,CCC1=C(C(=NC(=N1)N)N)C2=CC=C(C=C2)Cl,"5-(4-chlorophenyl)-6-ethylpyrimidine-2,4-diamine",4993,0
+test_pos_123,c12c([C@@H]([C@@H]3[N@@]4C[C@H](C=C)[C@H](C3)CC4)O)ccnc1ccc(c2)OC,COC1=CC2=C(C=CN=C2C=C1)C(C3CC4CCN3CC4C=C)O,"(S)-[(2R,4S,5R)-5-ethenyl-1-azabicyclo[2.2.2]octan-2-yl]-(6-methoxyquinolin-4-yl)methanol",441074,0
+test_pos_124,NC(=O)c1ncn(n1)C2OC(CO)C(O)C2O,C1=NC(=NN1C2C(C(C(O2)CO)O)O)C(=O)N,"1-[3,4-dihydroxy-5-(hydroxymethyl)oxolan-2-yl]-1,2,4-triazole-3-carboxamide",5064,0
+test_pos_125,CN3Cc1c(ncn1c2ccsc2C3=O)C(=O)OC(C)(C)C,CC(C)(C)OC(=O)C1=C2CN(C(=O)C3=C(N2C=N1)C=CS3)C,"tert-butyl 8-methyl-7-oxo-5-thia-1,8,12-triazatricyclo[8.3.0.02,6]trideca-2(6),3,10,12-tetraene-11-carboxylate",127382,0
+test_pos_126,Oc4ccc3[nH]cc(CCCCN1CCC(=CC1)c2ccccc2)c3c4,C1CN(CC=C1C2=CC=CC=C2)CCCCC3=CNC4=C3C=C(C=C4)O,"3-[4-(4-phenyl-3,6-dihydro-2H-pyridin-1-yl)butyl]-1H-indol-5-ol",219050,0
+test_pos_127,c1ccc2N(C(CN3CCCC3)C)c3c(ccc(C(=O)NCCC)c3)Sc2c1,CCCNC(=O)C1=CC2=C(C=C1)SC3=CC=CC=C3N2C(C)CN4CCCC4,N-propyl-10-(1-pyrrolidin-1-ylpropan-2-yl)phenothiazine-2-carboxamide,9800851,0
+test_pos_128,OC(=O)CNC(=O)c1ccccc1O,C1=CC=C(C(=C1)C(=O)NCC(=O)O)O,2-[(2-hydroxybenzoyl)amino]acetic acid,10253,0
+test_pos_129,c1(ccc(c(c1)Cl)Cl)CC(=O)N1C(CN(C)CC1)CN1CCCC1,CN1CCN(C(C1)CN2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"2-(3,4-dichlorophenyl)-1-[4-methyl-2-(pyrrolidin-1-ylmethyl)piperazin-1-yl]ethanone",15730175,0
+test_pos_130,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN2CCCC2)c2n(CC1)ccn2)=O,C1CCN(C1)CC2C3=NC=CN3CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl,"2-(3,4-dichlorophenyl)-1-[8-(pyrrolidin-1-ylmethyl)-6,8-dihydro-5H-imidazo[1,2-a]pyrazin-7-yl]ethanone",44212821,0
+test_pos_131,c1(ccc(c(c1)Cl)Cl)CC(N1C(CN2CCCC2)c2n(CC1)ncn2)=O,C1CCN(C1)CC2C3=NC=NN3CCN2C(=O)CC4=CC(=C(C=C4)Cl)Cl,"2-(3,4-dichlorophenyl)-1-[8-(pyrrolidin-1-ylmethyl)-6,8-dihydro-5H-[1,2,4]triazolo[1,5-a]pyrazin-7-yl]ethanone",44212824,0
+test_pos_132,c12c(nc(c(c1C(NC(CC)c1ccccc1)=O)C)c1ccccc1)cccc2,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)C,3-methyl-2-phenyl-N-(1-phenylpropyl)quinoline-4-carboxamide,3946663,0
+test_pos_133,c1ccc2nc(c(c(C(NC(CC)c3ccccc3)=O)c2c1)O)c1ccccc1,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)O,3-hydroxy-2-phenyl-N-(1-phenylpropyl)quinoline-4-carboxamide,133090,0
+test_pos_134,c1cc2c(C(NC(CC)c3ccccc3)=O)c(c(nc2cc1)c1ccccc1)OCCCN(C)C,CCC(C1=CC=CC=C1)NC(=O)C2=C(C(=NC3=CC=CC=C32)C4=CC=CC=C4)OCCCN(C)C,3-[3-(dimethylamino)propoxy]-2-phenyl-N-(1-phenylpropyl)quinoline-4-carboxamide,17825875,0
+test_pos_135,CCCN(CCC)CCc1ccc(O)c2NC(=O)Cc12,CCCN(CCC)CCC1=C2CC(=O)NC2=C(C=C1)O,"4-[2-(dipropylamino)ethyl]-7-hydroxy-1,3-dihydroindol-2-one",133741,0
+test_pos_136,CC(C)NCC(O)c1ccc(NS(C)(=O)=O)cc1,CC(C)NCC(C1=CC=C(C=C1)NS(=O)(=O)C)O,N-[4-[1-hydroxy-2-(propan-2-ylamino)ethyl]phenyl]methanesulfonamide,5253,0
+test_pos_137,Cc2cn(C1OC(CO)C=C1)c(=O)[nH]c2=O,CC1=CN(C(=O)NC1=O)C2C=CC(O2)CO,"1-[5-(hydroxymethyl)-2,5-dihydrofuran-2-yl]-5-methylpyrimidine-2,4-dione",5155,0
+test_pos_138,c1(S(Nc2c(c(C)no2)C)(=O)=O)ccc(N)cc1,CC1=C(ON=C1C)NS(=O)(=O)C2=CC=C(C=C2)N,"4-amino-N-(3,4-dimethyl-1,2-oxazol-5-yl)benzenesulfonamide",5344,0
+test_pos_139,Nc2c1CCCCc1nc3ccccc23,C1CCC2=NC3=CC=CC=C3C(=C2C1)N,"1,2,3,4-tetrahydroacridin-9-amine",1935,0
+test_pos_140,c1cc(ccc1CCCC(OC(C)(C)C)=O)N(CCCl)CCCl,CC(C)(C)OC(=O)CCCC1=CC=C(C=C1)N(CCCl)CCCl,tert-butyl 4-[4-[bis(2-chloroethyl)amino]phenyl]butanoate,83909,0
+test_pos_141,CC34CCC1C(CCC2=CC(=O)CCC12C)C3CCC4O,CC12CCC3C(C1CCC2O)CCC4=CC(=O)CCC34C,"17-hydroxy-10,13-dimethyl-1,2,6,7,8,9,11,12,14,15,16,17-dodecahydrocyclopenta[a]phenanthren-3-one",5408,0
+test_pos_142,CCCC(C)C1(CC)C(=O)NC(=S)NC1=O,CCCC(C)C1(C(=O)NC(=S)NC1=O)CC,"5-ethyl-5-pentan-2-yl-2-sulfanylidene-1,3-diazinane-4,6-dione",3000715,0
+test_pos_143,S=P(N1CC1)(N2CC2)N3CC3,C1CN1P(=S)(N2CC2)N3CC3,tris(aziridin-1-yl)-sulfanylidene-lambda5-phosphane,5453,0
+test_pos_144,CC3CC1=C(CCC(=O)C1)C4CCC2(C)C(CCC2(O)C#C)C34,CC1CC2=C(CCC(=O)C2)C3C1C4CCC(C4(CC3)C)(C#C)O,"17-ethynyl-17-hydroxy-7,13-dimethyl-1,2,4,6,7,8,9,11,12,14,15,16-dodecahydrocyclopenta[a]phenanthren-3-one",5470,0
+test_pos_145,CN3C(CNC(=O)c1ccsc1)CN=C(c2ccccc2F)c4ccccc34,CN1C(CN=C(C2=CC=CC=C21)C3=CC=CC=C3F)CNC(=O)C4=CSC=C4,"N-[[5-(2-fluorophenyl)-1-methyl-2,3-dihydro-1,4-benzodiazepin-2-yl]methyl]thiophene-3-carboxamide",115208,0
+test_pos_146,CNC(NCCSCc1csc(N=C(N)N)n1)=NC#N,CN=C(NCCSCC1=CSC(=N1)N=C(N)N)NC#N,"1-cyano-3-[2-[[2-(diaminomethylideneamino)-1,3-thiazol-4-yl]methylsulfanyl]ethyl]-2-methylguanidine",50287,0
+test_pos_147,Cc1ccccc1,CC1=CC=CC=C1,toluene,1140,0
+test_pos_148,C(=C)(Cl)(Cl)Cl,-,-,-,0
+test_pos_149,NC1C2CN(CC12)c4nc3n(cc(C(O)=O)c(=O)c3cc4F)c5ccc(F)cc5F,C1C2C(C2N)CN1C3=C(C=C4C(=O)C(=CN(C4=N3)C5=C(C=C(C=C5)F)F)C(=O)O)F,"7-(6-amino-3-azabicyclo[3.1.0]hexan-3-yl)-1-(2,4-difluorophenyl)-6-fluoro-4-oxo-1,8-naphthyridine-3-carboxylic acid",481696,0
+test_pos_150,CN(C1CCCCC1N2CCCC2)C(=O)Cc3ccc(Cl)c(Cl)c3,CN(C1CCCCC1N2CCCC2)C(=O)CC3=CC(=C(C=C3)Cl)Cl,"2-(3,4-dichlorophenyl)-N-methyl-N-(2-pyrrolidin-1-ylcyclohexyl)acetamide",5619,0
+test_pos_151,NC(N)=O,C(=O)(N)N,urea,1176,0
+test_pos_152,Nc1ncnc2n(cnc12)C3OC(CO)C(O)C3O,C1=NC(=C2C(=N1)N(C=N2)C3C(C(C(O3)CO)O)O)N,"2-(6-aminopurin-9-yl)-5-(hydroxymethyl)oxolane-3,4-diol",191,0
+test_pos_153,Nc2ccn(C1CCC(CO)O1)c(=O)n2,C1CC(OC1CO)N2C=CC(=NC2=O)N,4-amino-1-[5-(hydroxymethyl)oxolan-2-yl]pyrimidin-2-one,5718,0
+test_pos_154,C1CCN(CC1)Cc4cccc(OCCCNc3nc2ccccc2s3)c4,C1CCN(CC1)CC2=CC(=CC=C2)OCCCNC3=NC4=CC=CC=C4S3,"N-[3-[3-(piperidin-1-ylmethyl)phenoxy]propyl]-1,3-benzothiazol-2-amine",91769,0
