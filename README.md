@@ -37,12 +37,11 @@ python make_feature.py --smifile test.csv --outfile test_feature.csv --is_test
 ### train a new deep-b3 model on your data
 - You can run the script `deep-b3.py` to train a new model for the data or on your new data, and the models will be stored in `./models`.  Sample code:
 ```
-python deep-b3.py train --train_feature train.csv --test_feature test.csv --bs 64 --vis_out 512 --text_out 128
+python train.py train --feature train.csv --epoch 50 --bs 64 --vis_out 512 --text_out 64
 ```
 
 ### test the pre-trian deep-b3 model on the test data
 - You can run the script `deep-b3-test.py` to test the pre-trained model on the test data used in this study, the results are stored in file `result.csv`.  Sample code:
 ```
-python deep-b3-test.py -model model-choices
+python train.py test --feature test_feature.csv
 ```
-- model-choices: you can choice one in the 'tab', 'img', 'text', 'tab_img', 'tab_text', 'img_text', 'deep-b3', or given the 'all' for test all those models.
