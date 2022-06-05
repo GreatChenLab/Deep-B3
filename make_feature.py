@@ -1,6 +1,6 @@
 from rdkit import Chem, DataStructs
 from rdkit.Chem import Descriptors, rdMolDescriptors, MACCSkeys, AllChem
-from rdkit.Chem.Draw import SimilarityMaps
+from rdkit.Chem import Draw
 from rdkit.ML.Descriptors import MoleculeDescriptors
 import pandas as pd
 import numpy as np
@@ -59,20 +59,26 @@ def make_dirs(train_test):
 
 
 def make_image(mol, id, train_test):
+    '''
     contribs = rdMolDescriptors._CalcCrippenContribs(mol)
     fig = SimilarityMaps.GetSimilarityMapFromWeights(mol, [x for x, y in contribs])
     img_path = os.path.join(BASE_DIR, '{0}_images'.format(train_test))
     fig.savefig(os.path.join(img_path, '{0}.png'.format(id)), bbox_inches='tight')
     fig.clf()
     plt.close(fig)
+    '''
+    img_path = os.path.join(BASE_DIR, '{0}_images'.format(train_test))
+    Draw.MolToFile(mol, os.path.join(img_path, '{0}.png'.format(id)), size=(224, 224))
     return None
 
 def balance_data(file):
     logging.info('begin balance data')
     df = pd.read_csv(file)
     value_count = df['label'].value_counts()
-    pos_num = value_count[0] #label 0
-    neg_num = value_count[1] #label 1
+    dict_value = {'label': value_count.index, 'num': value_count.values}
+    value_pd = pd.DataFrame(dict_value, index=None)
+    pos_num = value_pd[value_pd.label == 0].num.values[0] #pos number
+    neg_num = value_pd[value_pd.label == 1].num.values[0] #neg number
 
     logging.info('pos samples num: {0}'.format(pos_num))
     logging.info('neg samples num: {0}'.format(neg_num))
@@ -81,31 +87,28 @@ def balance_data(file):
     logging.info('aumg time is {0}'.format(time))
     for index, row in df.iterrows():
         id = row['id']
-        canonical = row['canonical']
-        valid = row['valid']
-        iupca = row['iupac']
-        cid = row['cid']
+        smi = row['smi']
         try:label = row['label']
         except: label=0
         if int(label) == 1:
             smis = []
-            mol = smi_to_mol(valid)
+            mol = smi_to_mol(smi)
             for i in range(100):
                 try:
                     smis.append(Chem.MolToSmiles(mol, doRandom=True, canonical=False))
                 except:
-                    logging.error('error, {0}:{1}'.format(id, valid))
+                    logging.error('error, {0}:{1}'.format(id, smi))
             smis = list(set(smis))
-            if valid in smis:
-                smis.remove(valid)
+            if smi in smis:
+                smis.remove(smi)
             if len(smis) == 0:
-                logging.warning('{0} generated 0 times'.format(valid))
+                logging.warning('{0} generated 0 times'.format(smi))
             for i in range(len(smis)):
                 if i < time:
                     nid = '{0}_{1}'.format(id, i)
-                    new_neg.append([nid, smis[i], canonical, iupca, cid, label])
+                    new_neg.append([nid, smis[i], label])
     new_test_df = pd.DataFrame(
-        columns=['id', 'valid', 'canonical', 'iupac', 'cid', 'label'],
+        columns=['id', 'smi', 'label'],
         data=new_neg
     )
     new_df = pd.concat([df, new_test_df])
@@ -171,19 +174,19 @@ if __name__ == '__main__':
     df = pd.read_csv(infile)
     for index, row in df.iterrows():
         id = row['id']
-        valid = row['valid']
+        smi = row['smi']
         label = row['label']
-        mol = smi_to_mol(valid)
+        mol = smi_to_mol(smi)
         if mol:
             tabular = make_tabular(mol, calculator)
             tabular.insert(0, id)
             tabular.insert(1, label)
-            tabular.append(valid)
+            tabular.append(smi)
             new_tab = pd.DataFrame(columns=all_des, data=[tabular])
             new_tab.to_csv(outfile, index=False, header=None, mode='a')
             logging.info('{0} tabular feature completion'.format(id))
             make_image(mol, id, train_test)
             logging.info('{0} image completion'.format(id))
         else:
-            logging.error('smi error {0}-{1}'.format(id, valid))
+            logging.error('smi error {0}-{1}'.format(id, smi))
     logging.info('make feature Completion !')

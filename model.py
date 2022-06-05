@@ -37,35 +37,69 @@ class AttentionLayer(nn.Module):
 
 
 class ImageTabularTextModel(nn.Module):
-    def __init__(self, n_cont, encoder, vis_out=512, text_out=128, is_save=False):
+    def __init__(self, n_cont, encoder, vis_out=512, text_out=128, has_img=True, has_tab=True, has_text=True, is_save=False):
         """
         :param n_cont: the dim for tabular features, which is 1399 in this work
         :param encoder: nlp model encoder
         :param vis_out: the output image feature dim, default 512
         :param text_out: the output smiles feature dim, default 128
+        :param has_img: including images features
+        :param has_tab: including tabuler features
+        :param has_text: including text features
         :param is_save: save the features as file, default false
         """
         super().__init__()
-        self.tab_inf = n_cont
+        self.has_img = has_img
+        self.has_tab = has_tab
+        self.has_text = has_text
         self.save = is_save
-        self.cnn = create_cnn_model(models.resnet50, vis_out)
-        self.nlp = SequentialRNN(encoder[0], PoolingLinearClassifier([400 * 3] + [text_out], [.5]))
+        co_fea_len = []
+        if self.has_img:
+            self.cnn = create_cnn_model(models.resnet50, vis_out)
+            co_fea_len.append(vis_out)
+
+        if self.has_tab:
+            self.tab_inf = n_cont
+            co_fea_len.append(self.tab_inf)
+
+        if self.has_text:
+            self.nlp = SequentialRNN(encoder[0], PoolingLinearClassifier([400 * 3] + [text_out], [.5]))
+            co_fea_len.append(text_out)
+
         self.att = AttentionLayer(1, 1, 96)
-        self.fc1 = nn.Sequential(*bn_drop_lin(vis_out + self.tab_inf + text_out, 128, bn=True, p=.5, actn=nn.ReLU()))
+        self.fc1 = nn.Sequential(*bn_drop_lin(sum(co_fea_len), 128, bn=True, p=.5, actn=nn.ReLU()))
         self.fc2 = nn.Sequential(*bn_drop_lin(128, 2, bn=False, p=0.05, actn=nn.Sigmoid()))
 
     def forward(self, img: Tensor, tab: Tensor, text: Tensor) -> Tensor:
-        imgLatent = self.cnn(img)
-        # we used the TabularList, just cont values, simply for numpy
-        tabLatent = tab[-1]
-        textLatent = self.nlp(text)[0]
-        # this is for learn.summary(), we only use the cont in TabularList,
-        # when summary, it may have error shape for tab features
-        if len(tab) == 1:
-            tabLatent = torch.rand(1, self.tab_inf)
-        cat_feature = torch.cat([F.relu(imgLatent), F.relu(tabLatent), F.relu(textLatent)], dim=1)
+        features = []
+
+        if self.has_img:
+            imgLatent = F.relu(self.cnn(img))
+            features.append(imgLatent)
+
+        if self.has_tab:
+            # we used the TabularList, just cont values, simply for numpy
+            # this is for learn.summary(), we only use the cont in TabularList,
+            # when summary, it may have error shape for tab features
+            if len(tab) == 1:
+                tabLatent = torch.rand(1, self.tab_inf)
+            else:
+                tabLatent = F.relu(tab[-1])
+            features.append(tabLatent)
+
+        if self.has_text:
+            textLatent = F.relu(self.nlp(text)[0])
+            features.append(textLatent)
+
+        cat_feature = torch.cat(features, dim=1)
         cat_feature = cat_feature.reshape(cat_feature.size(0), 1, -1)
         res, att = self.att(cat_feature)
+        if self.save:
+            out_layer(imgLatent, './img.txt')
+            out_layer(tabLatent, './tab.txt')
+            out_layer(textLatent, './text.txt')
+            out_layer(cat_feature, './cat.txt')
+            out_layer(att, './att.txt')
         res = res.reshape(res.size(0), -1)
         pred = self.fc2(self.fc1(res))
         return pred
@@ -87,11 +121,15 @@ def collate_mixed(samples, pad_idx: int = 0):
 
 
 def split_layers(model: nn.Module) -> List[nn.Module]:
-    groups = [[model.cnn]]
-    groups += [[model.nlp]]
-    groups += [[model.att]]
-    groups += [[model.fc1]]
-    groups += [[model.fc2]]
+    groups = []
+    if hasattr(model, 'cnn'):
+        groups.append([model.cnn[1]])
+    if hasattr(model, "nlp"):
+        groups.append([model.nlp[0]])
+        groups.append([model.nlp[1]])
+    groups.append([model.att])
+    groups.append([model.fc1])
+    groups.append([model.fc2])
     return groups
 
 def _normalize_images_batch(b: Tuple[Tensor, Tensor], mean: FloatTensor, std: FloatTensor) -> Tuple[Tensor, Tensor]:
@@ -126,21 +164,35 @@ class ImageTabularTextLearner(Learner):
         self.callbacks.append(RNNTrainerSimple(self, alpha=alpha, beta=beta))
         self.split(split_layers)
 
-def image_tabular_text_learner(data, len_cont_names, nlp_cls, vis_out=512, text_out=128, is_save=False):
+def image_tabular_text_learner(
+        data, len_cont_names, nlp_cls, vis_out=512, text_out=64,
+        has_img=True, has_tab=True, has_text=True, is_save=False
+):
     """
     :param data: data for train the model
-    :nlp_cls: nlp classfiy file
+    :param nlp_cls: nlp classfiy file
     :param len_cont_names: feature dim for the tabular, 1399 in this work
     :param vis_out: the output image feature dim, default 512
     :param text_out: the output smiles feature dim, default 128
+    :param has_img: including images features
+    :param has_tab: including tabuler features
+    :param has_text: including text features
     :param is_save: save the features as file, default false
     :return:
     """
 
     l = text_classifier_learner(nlp_cls, AWD_LSTM, drop_mult=0.5)
     l.load_encoder('text_encoder')
-
-    model = ImageTabularTextModel(len_cont_names, l.model, vis_out, text_out, is_save)
+    model = ImageTabularTextModel(
+        n_cont=len_cont_names,
+        encoder=l.model,
+        vis_out=vis_out,
+        text_out=text_out,
+        has_img=has_img,
+        has_tab=has_tab,
+        has_text=has_text,
+        is_save=is_save
+    )
     opt_func = partial(optim.Adam, lr=3e-5, betas=(0.9,0.99), weight_decay=0.1, amsgrad=True)
     loss_func = CrossEntropyFlat()
     learn = ImageTabularTextLearner(
@@ -151,9 +203,8 @@ def image_tabular_text_learner(data, len_cont_names, nlp_cls, vis_out=512, text_
         metrics=[accuracy]
     )
     callbacks = [
-        EarlyStoppingCallback(learn, min_delta=1e-5, patience=4),
+        EarlyStoppingCallback(learn, min_delta=1e-5, patience=5),
         SaveModelCallback(learn)
     ]
     learn.callbacks.extend(callbacks)
     return learn
-
