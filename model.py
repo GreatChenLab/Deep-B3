@@ -18,7 +18,7 @@ def out_layer(tordata, outfile):
     out = tordata.reshape(-1, out_size)
     np.savetxt(outfile, out)
 
-
+#https://github.com/hallvagi/dl-explorer
 class AttentionLayer(nn.Module):
     def __init__(self, in_channels, out_channels, key_channels):
         super(AttentionLayer, self).__init__()
@@ -35,7 +35,7 @@ class AttentionLayer(nn.Module):
         x = A.matmul(V.permute(0, 2, 1)).permute(0, 2, 1)  # [bs x out_channels x seq_len]
         return x, A
 
-
+# https://forums.fast.ai/
 class ImageTabularTextModel(nn.Module):
     def __init__(self, n_cont, encoder, vis_out=512, text_out=128, has_img=True, has_tab=True, has_text=True, is_save=False):
         """
