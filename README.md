@@ -35,13 +35,18 @@ python make_feature.py --smifile test.csv --outfile test_feature.csv --is_test
 ```
 
 ### train a new deep-b3 model on your data
-- You can run the script `deep-b3.py` to train a new model for the data or on your new data, and the models will be stored in `./models`.  Sample code:
-```
-python train.py train --feature train.csv --epoch 50 --bs 64 --vis_out 512 --text_out 64
-```
-
+- You can run the script `deep-b3.py` to train a new model for the data or on your new data, and the models will be stored in `./models`.  Sample code:<br/>
+`1. train a model including image, tabular and text features, and the features output from the CNN is n and NLP is m `<br/>
+`python train.py train --feature train.csv --epoch 50 --bs 64 --vis_out n --text_out m`<br/>
+`2. train a model based on only image, and the features output from the CNN is m `<br/>
+`python train.py train --feature train.csv --epoch 50 --bs 64 --vis_out m --has_tab False --has_text False`<br/>
+`3. train a model based on only text, and the features output from the NLP is m `<br/>
+`python train.py train --feature train.csv --epoch 50 --bs 64 --text_out m --has_tab False --has_img False`<br/>
+`4. train a model based on only tabular`<br/>
+`python train.py train --feature train.csv --epoch 50 --bs 64 --has_img False --has_text False`<br/>
+and so on...
 ### test the pre-trian deep-b3 model on the test data
-- You can run the script `deep-b3-test.py` to test the pre-trained model on the test data used in this study, the results are stored in file `result.csv`.  Sample code:
+- You can run the script `train.py` to test the pre-trained model on the test data used in this study.  Sample code:
 ```
 python train.py test --feature test_feature.csv
 ```
